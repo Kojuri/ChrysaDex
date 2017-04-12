@@ -1,0 +1,27 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+#Règle de redirection
+
+RewriteRule ^404\.html$ index.php?page=inexist.php [L]
+
+#Règles globales
+
+RewriteRule ^Pokemon$ /pokedex/index.php?uc=gererPokemon [L]
+RewriteRule ^Pokemon/(.*)$ /pokedex/index.php?uc=gererPokemon&action=consulterPokemon&nom=$1
+RewriteRule ^Attaques$ /pokedex/index.php?uc=gererAttaques [L]
+RewriteRule ^Attaques/(.*)$ /pokedex/index.php?uc=gererAttaques&action=consulterAttaque&nom=$1
+RewriteRule ^CT-CS$ /pokedex/index.php?uc=CTCS [L]
+RewriteRule ^CT-CS/(.*)$ /pokedex/index.php?uc=CTCS&action=$1
+RewriteRule ^Types/(.*)$ /pokedex/index.php?uc=type&nom=$1
+RewriteRule ^Login$ /pokedex/index.php?uc=connexion [L]
+RewriteRule ^Login(.*)$ /pokedex/index.php?uc=connexion$1
+RewriteRule ^Deconnexion$ /pokedex/index.php?uc=deconnexion [L]
+RewriteRule ^ajouterPokemon$ /pokedex/index.php?uc=gererPokemon&action=ajouterPokemon&nom=$1
+RewriteRule ^supprimerPokemon/(.*)$ /pokedex/index.php?uc=gererPokemon&action=supprimerPokemon&nom=$1
+RewriteRule ^modifierPokemon/(.*)$ /pokedex/index.php?uc=gererPokemon&action=modifierPokemon&nom=$1
+
+
+
+

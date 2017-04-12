@@ -1,0 +1,215 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Pokedex accueil*/
+#pokedex div img{
+    display: block;
+    position: absolute;
+    left:0px;
+    width:100%;
+    height: 50%;
+}
+
+@keyframes AnimHaut{
+    0%{
+        top:0;
+        opacity: 1;
+    }
+    50%{
+        top:0;
+        opacity: 1;
+    }
+    100%{
+        top:-50%;
+        opacity: 1;
+    }
+}
+@-moz-keyframes AnimHaut{
+    0%{
+        top:0;
+        opacity: 1;
+    }
+    50%{
+        top:0;
+        opacity: 1;
+    }
+    100%{
+        top:-50%;
+        opacity: 1;
+    }
+}
+@-o-keyframes AnimHaut{
+    0%{
+        top:0;
+        opacity: 1;
+    }
+    50%{
+        top:0;
+        opacity: 1;
+    }
+    100%{
+        top:-50%;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes AnimHaut{
+    0%{
+        top:0;
+        opacity: 1;
+    }
+    50%{
+        top:0;
+        opacity: 1;
+    }
+    100%{
+        top:-50%;
+        opacity: 1;
+    }
+}
+
+
+@keyframes AnimCentre{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+@keyframes AnimBas{
+    0%{
+        top:50%;
+        opacity: 1;
+    }
+    50%{
+        top:50%;
+        opacity: 1;
+    }
+    100%{
+        top:100%;
+        opacity: 1;
+    }
+}
+@-moz-keyframes AnimBas{
+    0%{
+        top:50%;
+        opacity: 1;
+    }
+    50%{
+        top:50%;
+        opacity: 1;
+    }
+    100%{
+        top:100%;
+        opacity: 1;
+    }
+}
+@-o-keyframes AnimBas{
+    0%{
+        top:50%;
+        opacity: 1;
+    }
+    50%{
+        top:50%;
+        opacity: 1;
+    }
+    100%{
+        top:100%;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes AnimBas{
+    0%{
+        top:50%;
+        opacity: 1;
+    }
+    50%{
+        top:50%;
+        opacity: 1;
+    }
+    100%{
+        top:100%;
+        opacity: 1;
+    }
+}
+
+#pokedex div .pokedex_haut{
+    top:-50%;
+    opacity: 0;
+    
+    animation-name: AnimHaut;
+    animation-duration: 1.7s;
+}
+#pokedex div .pokedex_centre{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+    
+    animation-name: AnimCentre;
+    animation-duration: 3s;
+}
+#pokedex div .pokedex_bas{
+    top:100%;
+    opacity: 0;
+    
+    animation-name: AnimBas;
+    animation-duration: 1.7s;
+}
+
+/*Page d'accueil*/
+#accueil{
+    display: block;
+    margin-top: 50px;
+}
+#menuAccueil{
+    text-align: center;
+    background: #99FF99;
+    border-radius: 12px;
+}
+#menuAccueil div a{
+    display: inline-block;
+    padding: 35px;
+    width: 50%;
+    height: 48%;
+    background: #99FF99;
+    color: #777;
+    font-size: 1.6em;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+#menuAccueil div a:first-child{
+    margin-right: -4px;
+}
+#menuAccueil div:first-child a:nth-child(1){
+    border-radius: 12px 0 12px 0;
+}
+#menuAccueil div:first-child a:nth-child(2){
+    border-radius: 0 12px 0 12px;
+}
+#menuAccueil div:last-child a:nth-child(1){
+    border-radius: 0 12px 0 12px;
+}
+#menuAccueil div:last-child a:nth-child(2){
+    border-radius: 12px 0 12px 0;
+}
+
+#menuAccueil div a:hover{
+    background: #EEEEEE;
+    color: #333;
+    text-decoration: none;
+
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
